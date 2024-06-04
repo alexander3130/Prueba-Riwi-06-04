@@ -1,5 +1,6 @@
 package com.riwi.riwi.domain.entities;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -33,9 +34,9 @@ public class SurveyEntity {
     @Column(length = 100, nullable = false)
     private String description;
     @Column( nullable = false)
-    private Date creationDate;
+    private LocalDateTime creation_date;
     @Column(nullable = false)
-    private boolean active;
+    private Long active;
 
     /* RELACIONES */
 

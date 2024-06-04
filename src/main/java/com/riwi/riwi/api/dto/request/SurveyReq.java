@@ -21,6 +21,8 @@ public class SurveyReq {
     private boolean active;
     @NotBlank(message = "Hace falta una descripción.")
     private String description;
+    @NotBlank(message = "Hace falta un titulo.")
+    private String title;
     @NotNull(message = "Especifique la fecha y la hora.")
     @FutureOrPresent(message = "La fecha no puede ser inferior a la actual.")
     private LocalDateTime creation_date;

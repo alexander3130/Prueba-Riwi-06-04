@@ -46,7 +46,7 @@ public class QuestionEntity {
     private SurveyEntity survey; 
 
     //Una pregunta puede tener muchas opciones de respuesta
-    @OneToMany(mappedBy = "question_id", fetch = FetchType.EAGER, cascade = CascadeType.MERGE, orphanRemoval = false)
+    @OneToMany(mappedBy = "question", fetch = FetchType.EAGER, cascade = CascadeType.MERGE, orphanRemoval = false)
     private List<OptionQuestionEntity> optionquestion;
     
 

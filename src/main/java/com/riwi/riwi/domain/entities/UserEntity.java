@@ -42,6 +42,6 @@ public class UserEntity {
     //Un usuario puede tener muchas encuestas
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    @OneToMany(mappedBy = "creator_id", fetch = FetchType.EAGER, cascade = CascadeType.MERGE, orphanRemoval = false)
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.MERGE, orphanRemoval = false)
     private List<SurveyEntity> survey;
 }

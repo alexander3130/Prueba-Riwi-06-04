@@ -45,6 +45,6 @@ public class SurveyEntity {
     private UserEntity user; 
     
     // Una encuesta puede tener muchas preguntas
-    @OneToMany(mappedBy = "survey_id", fetch = FetchType.EAGER, cascade = CascadeType.MERGE, orphanRemoval = false)
+    @OneToMany(mappedBy = "survey", fetch = FetchType.EAGER, cascade = CascadeType.MERGE, orphanRemoval = false)
     private List<QuestionEntity> question;
 }

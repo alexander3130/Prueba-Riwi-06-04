@@ -1,8 +1,6 @@
 package com.riwi.riwi.api.dto.response;
 
 
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,5 +17,4 @@ public class UserResp {
     private String email;
     private String password;
     private String active;
-    private List<SurveyRespToUserResp> survey;
 }

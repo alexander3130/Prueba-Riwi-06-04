@@ -34,7 +34,7 @@ public class UserEntity {
     private String email;
     @Column(length = 255, nullable = false)
     private String password;
-    @Column(length = 20, nullable = false)
+    @Column(nullable = false)
     private boolean active;
 
     /* RELACIONES */

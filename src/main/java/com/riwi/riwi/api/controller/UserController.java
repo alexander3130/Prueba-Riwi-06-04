@@ -23,6 +23,7 @@ import com.riwi.riwi.api.dto.response.UserResp;
 import com.riwi.riwi.infraestructure.abstract_services.IUserService;
 import com.riwi.riwi.util.enums.SortType;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 
 @RestController
@@ -30,6 +31,7 @@ import lombok.AllArgsConstructor;
 @RequestMapping(path = "/users")
 @AllArgsConstructor
 
+@Tag(name = "Usuarios")
 public class UserController {
     private final IUserService userService;
 
